@@ -5,13 +5,34 @@
 </head>
 <body>
 <h1>List</h1>
-<a href="/">Voltar para a Home</a>
 <p>Você está vendo a lista?</p>
-<ol>
-    <li>Primeiro Item</li>
-    <li>Segundo Item</li>
-    <li>Terceiro Item</li>
-    <li><Quarto></Quarto> Item</li>
-</ol>
+<table>
+    <tr>
+        <td>id</td>
+        <td>titulo</td>
+        <td>descrição</td>
+        <td>preço</td>
+    </tr>
+    <%for(var i = 0; i < lista.length; i++){%>
+        <tr>
+            <td>
+                <%=lista[i].id%>
+            </td>
+
+            <td>
+                <%=lista[i].titulo%>
+            </td>
+
+
+            <td>
+                <%=lista[i].descricao%>
+            </td>
+
+            <td>
+                <%=lista[i].preco%>
+            </td>
+        </tr>
+    <%}%>
+</table>
 </body>
 </html>
